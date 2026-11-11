@@ -713,7 +713,6 @@ blockquote {
   .hero h1 { font-size: 52px; }
   .mission h2, .story-copy h2, .stewardship-copy h2, .focus-head h2 { font-size: 38px; }
   .donation-form { padding: 25px 21px; }
-  .grants-panel { display: block; }
   .footer-inner, .footer-links { grid-template-columns: 1fr; }
   .newsletter-form { width: 100%; }
   .newsletter-form input { width: 100%; }
