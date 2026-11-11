@@ -5,19 +5,8 @@ const form = document.getElementById('donation-form');
 const presetButtons = document.querySelectorAll('.preset-amount');
 const symbols = { USD: '$', CAD: 'CA$', GBP: '£', EUR: '€', AUD: 'A$', NZD: 'NZ$', CHF: 'CHF ', SGD: 'S$', HKD: 'HK$', JPY: '¥' };
 
-const slideshowSlides = document.querySelectorAll('.hero-slideshow .slide');
-
 function clearSelectedPreset() {
   presetButtons.forEach((button) => button.setAttribute('aria-pressed', 'false'));
-}
-
-if (slideshowSlides.length > 1) {
-  let activeIndex = 0;
-  setInterval(() => {
-    slideshowSlides[activeIndex].classList.remove('active');
-    activeIndex = (activeIndex + 1) % slideshowSlides.length;
-    slideshowSlides[activeIndex].classList.add('active');
-  }, 5000);
 }
 
 presetButtons.forEach((button) => {
