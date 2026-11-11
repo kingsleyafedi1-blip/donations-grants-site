@@ -1,4 +1,4 @@
-/* Additional donation presets and illustrative photo gallery. */
+/* Suggested donation controls and illustrative photo gallery. */
 .preset-amounts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:0 0 19px}
 .preset-amount{min-height:43px;border:1px solid var(--line);background:#f7f8f3;color:var(--forest);font:700 12px var(--sans);cursor:pointer;transition:background .18s,color .18s,border-color .18s}
 .preset-amount:hover,.preset-amount[aria-pressed="true"]{background:var(--forest);border-color:var(--forest);color:#fff}
@@ -14,5 +14,45 @@
 .story-photo figcaption strong{font:700 16px var(--serif);margin-bottom:5px}
 .story-photo figcaption span{font-size:11px;line-height:1.55;color:#e3e9e5}
 .photo-disclosure{margin:13px 0 0;color:#7a857e;font-size:10px;line-height:1.6}
-@media(max-width:700px){.story-gallery{grid-template-columns:1fr 1fr}.story-photo-wide{grid-column:1/-1}.story-photo{min-height:230px}.story-photo img{min-height:230px}}
-@media(max-width:420px){.preset-amounts{gap:6px}.preset-amount{min-height:41px;font-size:11px}.story-gallery{grid-template-columns:1fr}.story-photo-wide{grid-column:auto}.story-photo{min-height:260px}.story-photo img{min-height:260px}}
+
+/* Premium visual refinement: elevated editorial layout without invented trust claims. */
+:root{--forest:#183e33;--forest-dark:#102820;--lime:#d9ed9b;--cream:#fbfaf6;--ink:#17231e;--muted:#65736b;--line:#e4e8df}
+body{background:var(--cream)}
+.header{position:sticky;top:0;z-index:20;background:rgba(251,250,246,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(24,62,51,.1)}
+.brand-mark{box-shadow:0 4px 14px rgba(24,62,51,.12)}
+.header nav .nav-cta{box-shadow:0 7px 18px rgba(16,40,32,.14);transition:transform .18s,background .18s}
+.header nav .nav-cta:hover{background:#245541;transform:translateY(-1px)}
+.hero{position:relative;background:radial-gradient(ellipse at 82% 18%,rgba(217,237,155,.12),transparent 36%),linear-gradient(120deg,#102820,#1b493b 75%,#234f40);padding-top:96px;padding-bottom:90px}
+.hero:after{content:"";position:absolute;pointer-events:none;inset:0;background-image:radial-gradient(rgba(255,255,255,.12) .6px,transparent .6px);background-size:8px 8px;opacity:.13;mask-image:linear-gradient(90deg,transparent 35%,#000)}
+.hero-grid{position:relative;z-index:1}
+.hero h1{max-width:680px;font-size:clamp(50px,6.6vw,82px);letter-spacing:-.08em}
+.hero-text{max-width:490px;font-size:15px;color:#dce5df}
+.hero-art{border:1px solid rgba(255,255,255,.28);box-shadow:0 28px 65px rgba(0,0,0,.2)}
+.button{min-height:50px;border-radius:4px;letter-spacing:.01em}
+.button-light{box-shadow:0 8px 24px rgba(217,237,155,.18)}
+.section{padding-top:98px;padding-bottom:98px}
+.mission h2,.section-heading h2,.grants h2{letter-spacing:-.07em}
+.mission-copy{font-size:14px;color:#53625a}
+.impact{background:linear-gradient(180deg,#edf0e8,#e8ede3)}
+.impact-card{border:1px solid #e1e6dc;background:rgba(255,255,252,.9);box-shadow:0 8px 24px rgba(28,53,39,.035);transition:transform .2s,box-shadow .2s,border-color .2s}
+.impact-card:hover{transform:translateY(-4px);border-color:#cdd8c2;box-shadow:0 16px 32px rgba(28,53,39,.09)}
+.card-icon{background:#edf3df}
+.stories{background:#fbfaf6}
+.story-photo{border-radius:3px;box-shadow:0 12px 30px rgba(21,43,32,.1)}
+.donate{background:radial-gradient(ellipse at 12% 50%,rgba(91,132,90,.16),transparent 40%),#102820}
+.donation-form{padding:34px 35px;border:1px solid rgba(255,255,255,.6);box-shadow:0 24px 70px rgba(0,0,0,.22)}
+.donation-form:focus-within{box-shadow:0 24px 70px rgba(0,0,0,.22),0 0 0 3px rgba(217,237,155,.24)}
+.amount-input,.form-row select{border-radius:3px;transition:border-color .18s,box-shadow .18s}
+.amount-input:focus-within,.form-row select:focus{border-color:#799565;box-shadow:0 0 0 3px rgba(121,149,101,.15);outline:none}
+.preset-amount{border-radius:3px;background:#fbfcf8}
+.preset-amount:hover,.preset-amount[aria-pressed="true"]{background:var(--forest);border-color:var(--forest)}
+.button-green{min-height:53px;box-shadow:0 9px 22px rgba(16,40,32,.15)}
+.form-footnote{max-width:340px;margin-left:auto;margin-right:auto}
+.secure-note{border-top:1px solid rgba(255,255,255,.15);padding-top:16px;max-width:390px}
+.grants-panel{border:1px solid #dfe5d9;box-shadow:0 12px 36px rgba(28,53,39,.05)}
+.button-outline{border-radius:3px;transition:background .18s,transform .18s}
+.footer{background:#f4f3ec}
+.footer-inner{row-gap:20px}
+:focus-visible{outline:3px solid #78964e;outline-offset:3px}
+@media(max-width:700px){.hero{padding-top:64px;padding-bottom:58px}.section{padding-top:69px;padding-bottom:69px}.donation-form{padding:25px 21px}}
+@media(max-width:420px){.hero h1{font-size:48px}.preset-amounts{gap:6px}.preset-amount{min-height:41px;font-size:11px}.story-gallery{grid-template-columns:1fr}.story-photo-wide{grid-column:auto}.story-photo{min-height:260px}.story-photo img{min-height:260px}}
