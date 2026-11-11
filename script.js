@@ -50,4 +50,5 @@ amount.addEventListener('input', () => {
   amount.setCustomValidity('');
   clearSelectedPreset();
 });
+
 document.getElementById('year').textContent = new Date().getFullYear();
